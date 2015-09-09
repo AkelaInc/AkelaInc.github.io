@@ -44,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('index.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,14 +101,16 @@ $(document).ready(function(){initNavTree('index.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Akela OpenVNA C &amp; Python API Documentation</p>
-<p><a class="el" href="d3/de0/group___c-_a_p_i.html">C API Documentation</a></p>
+<p><a class="el" href="db/d1a/group__overview.html">General system overview</a> A brief overview of the VNA's internal state-machine and how it interacts with the measurement process. </p>
+<hr/>
+<p><a class="el" href="d3/de0/group___c-_a_p_i.html">C API Documentation</a> </p>
+<hr/>
 <p>The Python API has two abstraction levels.</p>
 <ul>
-<li><a class="el" href="d7/d39/group___python-_r_a_w-_a_p_i.html">Python-RAW-API</a> provides the RAW_VNA class, and is a thin wrapper around the underlying c API. It handles type-conversion, keeping track of the task handle, and little else.</li>
-<li><a class="el" href="d2/d4e/group___python-_o_o_p-_a_p_i.html">Python-OOP-API</a> provides the VNA class, and is a higher-level interface that makes common VNA tasks easier to implement.</li>
-</ul>
-<p>It also has some auxilliary modules:</p>
-<ul>
+<li><a class="el" href="d5/dcb/group___python-_basic-_a_p_i.html">Python-Basic-API</a> provides the <a class="el" href="d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html">RAW_VNA</a> class, and is a thin wrapper around the underlying c API. It handles type-conversion, keeping track of the task handle, and little else.</li>
+<li><p class="startli"><a class="el" href="d2/d4e/group___python-_o_o_p-_a_p_i.html">Python-OOP-API</a> provides the <a class="el" href="d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html">VNA</a> class, and is a higher-level interface that makes common VNA tasks easier to implement. It is still, to some extent, a work-in-progress.</p>
+<p class="startli">It also has some auxilliary modules:</p>
+</li>
 <li><a class="el" href="d0/d60/group___python-_exceptions.html">Python-Exceptions</a> is a set of exceptions that may be thrown for corresponding C api call exception values. </li>
 </ul>
 </div></div><!-- contents -->
@@ -115,7 +118,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 3 2015 14:41:57 for OpenVNA by
+    <li class="footer">Generated on Wed Sep 9 2015 13:54:37 for OpenVNA by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

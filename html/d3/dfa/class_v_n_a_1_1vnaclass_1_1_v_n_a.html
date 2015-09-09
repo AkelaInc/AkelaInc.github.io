@@ -44,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="../../files.html"><span>Files</span></a></li>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,7 +125,7 @@ Inheritance diagram for VNA:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac775ee34451fdfa742b318538164070e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html#ac775ee34451fdfa742b318538164070e">__init__</a></td></tr>
-<tr class="memdesc:ac775ee34451fdfa742b318538164070e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routine when connecting to an Akela <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> Sets up logging, creates a task instance to control the <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a>, establishes connection with <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> on specified IP:port, initializes <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> and downloads hw details, queries task state, and emits some info to the logging interface at the DEBUG level.  <a href="#ac775ee34451fdfa742b318538164070e">More...</a><br/></td></tr>
+<tr class="memdesc:ac775ee34451fdfa742b318538164070e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect and initialize a remote <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a>.  <a href="#ac775ee34451fdfa742b318538164070e">More...</a><br/></td></tr>
 <tr class="separator:ac775ee34451fdfa742b318538164070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6750e95dc16cc3bf51069422e8ef1dc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html#af6750e95dc16cc3bf51069422e8ef1dc">set_config</a></td></tr>
 <tr class="memdesc:af6750e95dc16cc3bf51069422e8ef1dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure a connected <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> with specified hoprate, attenuation and (optional) linear sweep parameters.  <a href="#af6750e95dc16cc3bf51069422e8ef1dc">More...</a><br/></td></tr>
@@ -168,8 +169,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>load_dll_cal_auto</b><
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Higher-level object-oriented library for interfacing with one or more Akela VNAs. </p>
-<p>This class serves as a wrapper for vnalibrary.py, which directly wraps the C++ code in vnadll. Technically, everything here can be implemented using only vnalibrary.py. Nevertheless, these routines are valuable as they abstract away the low-level details of dealing with the C++.</p>
-<p>Common see testVNA.py import <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> vna = VNA.VNA(DEVICE_IP, DEVICE_IPPort) #create <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> object [...] = vna.set_config(...) #configure [...] = vna.setup_start() #enable aquisition [...] = vna.measure_uncal(...) #measure paths </p>
+<p>This class serves as a wrapper for vnalibrary.py, which directly wraps the C++ code in vnadll. Functionally, everything here can be implemented using only vnalibrary.py.</p>
+<p>Nevertheless, these routines are valuable as they abstract away the lower-level details of dealing with the hardware.</p>
+<p>Note that this inherits from <a class="el" href="../../d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html">VNA.vnalibrary.RAW_VNA</a>, so you can call RAW_VNA methods on it directly, without needing to manage two <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> instances. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac775ee34451fdfa742b318538164070e"></a>
 <div class="memitem">
@@ -185,13 +187,13 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>load_dll_cal_auto</b><
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>DEVICE_IP</em>, </td>
+          <td class="paramname"><em>device_ip</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>DEVICE_IPPort</em>, </td>
+          <td class="paramname"><em>device_ip_port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -213,11 +215,12 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>load_dll_cal_auto</b><
       </table>
 </div><div class="memdoc">
 
-<p>Routine when connecting to an Akela <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> Sets up logging, creates a task instance to control the <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a>, establishes connection with <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> on specified IP:port, initializes <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> and downloads hw details, queries task state, and emits some info to the logging interface at the DEBUG level. </p>
+<p>Connect and initialize a remote <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a>. </p>
+<p>Sets up logging, creates a task instance to control the <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a>, establishes connection with <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> on specified IP:port, initializes <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> and downloads hw details, queries task state, and emits some info to the logging interface at the DEBUG level.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">DEVICE_IP</td><td>(str) IP address of <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> hardware </td></tr>
-    <tr><td class="paramname">DEVICE_IPPort</td><td>(int) IP port-number for connection </td></tr>
+    <tr><td class="paramname">device_ip</td><td>(str) IP address of <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> hardware </td></tr>
+    <tr><td class="paramname">device_ip_port</td><td>(int) IP port-number for connection. Typically 1024+ </td></tr>
     <tr><td class="paramname">vna_no</td><td>(int/str) Number/String inserted into logger path for the relevant <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a>. The resultant logging path will be: <code>Main.VNA-API-%s</code>, where <code>%s</code> is the value of <code>vna_no</code>. If not specified, this will default to the ASCII IP for the <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a>. </td></tr>
     <tr><td class="paramname">loglevel</td><td>(logging level) Set the log-level for the DLL interface. Defaults to <code>logging.INFO</code> if not specified.</td></tr>
   </table>
@@ -541,7 +544,7 @@ Nothing </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>VNA</b></li><li class="navelem"><b>vnaclass</b></li><li class="navelem"><a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html">VNA</a></li>
-    <li class="footer">Generated on Thu Sep 3 2015 14:41:56 for OpenVNA by
+    <li class="footer">Generated on Wed Sep 9 2015 13:54:37 for OpenVNA by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

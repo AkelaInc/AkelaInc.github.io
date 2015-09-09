@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>OpenVNA: Python-OOP-API</title>
+<title>OpenVNA: System Overview</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -78,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('d2/d4e/group___python-_o_o_p-_a_p_i.html','../../');});
+$(document).ready(function(){initNavTree('db/d1a/group__overview.html','../../');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -96,24 +96,22 @@ $(document).ready(function(){initNavTree('d2/d4e/group___python-_o_o_p-_a_p_i.ht
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle">
-<div class="title">Python-OOP-API</div>  </div>
+<div class="title">System Overview</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html">VNA</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher-level object-oriented library for interfacing with one or more Akela VNAs.  <a href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h1><a class="anchor" id="oop-api-brief"></a>
-Higher-Level VNA API Interface</h1>
-<dl class="section author"><dt>Authors</dt><dd>Abhejit Rajagopal <a href="#" onclick="location.href='mai'+'lto:'+'abh'+'ej'+'it@'+'ec'+'e.u'+'cs'+'b.e'+'du'; return false;">abhej<span style="display: none;">.nosp@m.</span>it@e<span style="display: none;">.nosp@m.</span>ce.uc<span style="display: none;">.nosp@m.</span>sb.e<span style="display: none;">.nosp@m.</span>du</a>, Connor Wolf <a href="#" onclick="location.href='mai'+'lto:'+'cwo'+'lf'+'@ak'+'el'+'ain'+'c.'+'com'; return false;">cwolf<span style="display: none;">.nosp@m.</span>@ake<span style="display: none;">.nosp@m.</span>lainc<span style="display: none;">.nosp@m.</span>.com</a></dd></dl>
-<p>This is the "OOP" API wrapper for the AKELA <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> interface. It seeks to be a more pythonic wrapper for the underlying <a class="el" href="../../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html" title="Higher-level object-oriented library for interfacing with one or more Akela VNAs. ...">VNA</a> interface. </p>
+<p>The VNA has several operating states, which it can be helpful to understand to better use the hardware.</p>
+<ul>
+<li><b>Uninitialized</b> This is the mode the VNA is in when it's not connected to a application, or after it has been power cycled.</li>
+<li><p class="startli"><b>Stopped</b> The VNA is connected to a computer, the supported sweep parameters and embedded calibration data (if present) have been retreived and cached locally, and the sweep parameters can be configured.</p>
+<p class="startli">In general, most of the measurement parameters can only be adjusted while the hardware is in the stopped state.</p>
+</li>
+<li><p class="startli"><b>Started</b> The VNA is ready to begin a sweep. This means that the sweep program specified by the measurement parameters has been generated on the PC end, and then downloaded into the VNA's internal memory.</p>
+<p class="startli">Once in the started mode, the timing between the reception of a "take-sweep" message and the actual commencement of a measurement sweep is <em>rigidly</em> deterministic.</p>
+</li>
+</ul>
+<p>These states map quite closely to interfaces exposed through the various demo applications. The Python application exposes the <code>uninitialized</code> -&gt; <code>stopped</code> state transition through the "connect" button, and toggling between <code>stopped</code> and <code>started</code> via the "run" button.</p>
+<p>The C++ API demo wraps hides the <code>stopped</code> state internally, setting up a measurement and then immediately starting it on initialization. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

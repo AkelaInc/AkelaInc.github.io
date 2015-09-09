@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "OpenVNA", "index.html", [
+    [ "OpenVNA", "d0/d3d/md__media_sf__code_openvna_vnadll__r_e_a_d_m_e.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
@@ -21,7 +22,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a2dbc3bbc0ab2b679fe67145cb36da78e"
+"d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a1d88dafed0ef6a23ba03acea803da2fd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
