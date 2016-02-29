@@ -25,11 +25,16 @@
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
-<table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0" style="width:100%">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">OpenVNA
+   <div style="float:right">
+   <a href="http://www.akelavna.com">
+   <img src="/Akela_Logo_small.png" style="height: 56px">
+   </a>
+   </div>
+   <div id="projectname">Akela OpenVNA
    </div>
   </td>
  </tr>
@@ -56,8 +61,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
                onmouseout="return searchBox.OnSearchSelectHide()"
                alt=""/>
           <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onfocus="searchBox.OnSearchFieldFocus(true)"
+               onblur="searchBox.OnSearchFieldFocus(false)"
                onkeyup="searchBox.OnSearchFieldChange(event)"/>
           </span><span class="right">
             <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
@@ -81,7 +86,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
+  <div id="splitbar" style="-moz-user-select:none;"
        class="ui-resizable-handle">
   </div>
 </div>
@@ -98,7 +103,7 @@ $(document).ready(function(){initNavTree('d8/de8/class_v_n_a_1_1vnalibrary_1_1_r
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
+<iframe src="javascript:void(0)" frameborder="0"
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -112,7 +117,7 @@ $(document).ready(function(){initNavTree('d8/de8/class_v_n_a_1_1vnalibrary_1_1_r
 </div><!--header-->
 <div class="contents">
 
-<p>Minimal wrapper for the VNA Dll.  
+<p>Minimal wrapper for the VNA Dll.
  <a href="../../d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for RAW_VNA:</div>
@@ -1137,7 +1142,7 @@ Nothing <hr/>
 <pre class="fragment">    \exception ERR_WRONG_STATE if the Task is not in the TASK_STOPPED state
     \exception ERR_FREQ_OUT_OF_BOUNDS if a frequency is beyond the allowed min/max. (You can get
         the min and max from the \ref HardwareDetails struct returned by \ref getHardwareDetails())
-    \exception ERR_TOO_MANY_POINTS if N is larger than the maximum allowed (see \ref HardwareDetails)</pre> 
+    \exception ERR_TOO_MANY_POINTS if N is larger than the maximum allowed (see \ref HardwareDetails)</pre>
 </div>
 </div>
 <a class="anchor" id="a31d24a09d7eda66a7ae1ec7e32d0e91f"></a>
@@ -1349,7 +1354,7 @@ Nothing <hr/>
     \exception ERR_MISSING_ATTEN if the attenuation has not yet been specified
     \exception ERR_MISSING_FREQS if the frequencies have not yet been specified
     \exception ERR_PROG_OVERFLOW if the size of the program is too large for the hardware's memory
-            (this can happen if there are too many frequencies)</pre> 
+            (this can happen if there are too many frequencies)</pre>
 </div>
 </div>
 <a class="anchor" id="af128d3e14b78a3c8bb53e55a3932fade"></a>
@@ -1440,7 +1445,7 @@ Nothing <hr/>
 <pre class="fragment">    \exception ERR_WRONG_STATE if the Task is in the TASK_UNINITIALIZED state
     \exception ERR_FREQ_OUT_OF_BOUNDS if one of the bounds is beyond the allowed min/max. (You can get
         the min and max from the HardwareDetails struct returned by getHardwareDetails())
-    \exception ERR_TOO_MANY_POINTS if N is larger than the maximum allowed (see \ref HardwareDetails)</pre> 
+    \exception ERR_TOO_MANY_POINTS if N is larger than the maximum allowed (see \ref HardwareDetails)</pre>
 </div>
 </div>
 <a class="anchor" id="a89f63aee8864e78c107dd5e259158310"></a>
@@ -1542,7 +1547,7 @@ Nothing <hr/>
 <pre class="fragment">    \exception ERR_WRONG_STATE if the Task is in the TASK_UNINITIALIZED state
     \exception ERR_FREQ_OUT_OF_BOUNDS if the frequency is beyond the allowed min/max. (You can get
         the min and max from the HardwareDetails struct returned by getHardwareDetails())
-    \exception VNADLL_API ErrCode utilNearestLegalFreq(TaskHandle t, double&amp; freq);</pre> 
+    \exception VNADLL_API ErrCode utilNearestLegalFreq(TaskHandle t, double&amp; freq);</pre>
 </div>
 </div>
 <a class="anchor" id="ae24f2ff5d2bc6632c0bfe6408c85b1f0"></a>
@@ -1576,7 +1581,7 @@ Nothing <hr/>
 <pre class="fragment">    \exception ERR_SOCKET if there was a problem sending a message
     \exception ERR_NO_RESPONSE if the unit did not respond to commands
     \exception ERR_MISSING_IP if no IP address has been set
-    \exception ERR_MISSING_PORT if no port has been set</pre> 
+    \exception ERR_MISSING_PORT if no port has been set</pre>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
