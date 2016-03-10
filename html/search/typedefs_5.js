@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rfpath',['RFPath',['../d4/df1/group___r_f_path_selector.html#ga09899f5f016f28233f5566cdf739e5d9',1,'akela_vna_dll.h']]]
+  ['sparameter',['SParameter',['../d8/dcb/group___s_parameter_selector.html#ga86c6126c4ce702e67901f5c960b69343',1,'akela_vna_dll.h']]]
 ];

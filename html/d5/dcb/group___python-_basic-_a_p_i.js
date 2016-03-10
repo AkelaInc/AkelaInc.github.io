@@ -5,7 +5,6 @@ var group___python__basic__a_p_i =
     [ "HopRateSettings-Py", "dc/d01/group___hop_rate_settings-_py.html", "dc/d01/group___hop_rate_settings-_py" ],
     [ "AttenuationSettings-Py", "d0/dee/group___attenuation_settings-_py.html", "d0/dee/group___attenuation_settings-_py" ],
     [ "TaskState-Py", "d2/d4d/group___task_state-_py.html", "d2/d4d/group___task_state-_py" ],
-    [ "RFPathSelector-Py", "d5/dc9/group___r_f_path_selector-_py.html", "d5/dc9/group___r_f_path_selector-_py" ],
     [ "SParameterSelector-Py", "db/d92/group___s_parameter_selector-_py.html", "db/d92/group___s_parameter_selector-_py" ],
     [ "CalibrationStepSelector-Py", "dc/dc1/group___calibration_step_selector-_py.html", "dc/dc1/group___calibration_step_selector-_py" ],
     [ "HardwareDetails", "df/d45/class_v_n_a_1_1vnalibrary_1_1_hardware_details.html", [
@@ -29,7 +28,9 @@ var group___python__basic__a_p_i =
       [ "getNumberOfFrequencies", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a4939884484405a86cfb3fddd24f31893", null ],
       [ "getState", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a4ce4ebac6ce95bd44e0d8c96d2f7229c", null ],
       [ "getTimeout", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a84283e8fc44a9fc0c9d1d7f7701f13af", null ],
+      [ "hasFactoryCalibration", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#ae52c0791187c024999fbe1cc089d2331", null ],
       [ "importCalibration", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a8bf88508b420e5aa3ef6099010001f47", null ],
+      [ "importFactoryCalibration", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a7ef87ae2f8d388f6f2fa6b4c7c511618", null ],
       [ "initialize", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a3d5912674f655d309d5f51470b7cdbc7", null ],
       [ "interruptMeasurement", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a2dbc3bbc0ab2b679fe67145cb36da78e", null ],
       [ "isCalibrationComplete", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a1a0721548efdadfc6b1010599ffba02f", null ],
@@ -48,7 +49,7 @@ var group___python__basic__a_p_i =
       [ "utilGenerateLinearSweep", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a89f63aee8864e78c107dd5e259158310", null ],
       [ "utilNearestLegalFreq", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a06d8e26c50ce01f09953cc09bd8d2e0f", null ],
       [ "utilPingUnit", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#ae24f2ff5d2bc6632c0bfe6408c85b1f0", null ],
-      [ "task", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#aa4d42044193f96ecc0d82daab68fb0e6", null ]
+      [ "__task", "d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#ad106bad73a0dbcb9dcbe624de729a6ec", null ]
     ] ],
     [ "ComplexDataFactory", "d5/dcb/group___python-_basic-_a_p_i.html#gaaa89b85e9efa53af491784915d62aed5", null ],
     [ "DoubleArrayFactory", "d5/dcb/group___python-_basic-_a_p_i.html#ga001a229a1f4669adbb2c15addbcc5381", null ],

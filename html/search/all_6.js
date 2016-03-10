@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['generate_5fcal',['generate_cal',['../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html#a194748de99d87659e64a84c96857ef67',1,'VNA::vnaclass::VNA']]],
-  ['generate_5fcaldata',['generate_caldata',['../d3/dfa/class_v_n_a_1_1vnaclass_1_1_v_n_a.html#a328ba9cccb0342678dcf60a931b82aba',1,'VNA::vnaclass::VNA']]],
   ['getattenuation',['getAttenuation',['../d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#a79c492fe65d22163ba5da8a14c6810eb',1,'VNA.vnalibrary.RAW_VNA.getAttenuation()'],['../d3/de0/group___c-_a_p_i.html#ga3aa329099c8254916752e210f84b3ee8',1,'getAttenuation():&#160;akela_vna_dll.h']]],
   ['getcalibrationfrequencies',['getCalibrationFrequencies',['../d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#af2567197f1a6fa7978305eff17676424',1,'VNA.vnalibrary.RAW_VNA.getCalibrationFrequencies()'],['../d3/de0/group___c-_a_p_i.html#ga96c9d587d0e6f6f85a3d20fa2b8ef0cb',1,'getCalibrationFrequencies():&#160;akela_vna_dll.h']]],
   ['getcalibrationnumberoffrequencies',['getCalibrationNumberOfFrequencies',['../d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#aa0b82d3fc18d1ba861a4300147cb9731',1,'VNA.vnalibrary.RAW_VNA.getCalibrationNumberOfFrequencies()'],['../d3/de0/group___c-_a_p_i.html#gaff0404b6a268712b03ccaf651ee05957',1,'getCalibrationNumberOfFrequencies():&#160;akela_vna_dll.h']]],

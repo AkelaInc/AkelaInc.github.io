@@ -1,7 +1,7 @@
 var searchData=
 [
   ['handlereturncode',['handleReturnCode',['../d5/df0/group___error_exception_map-_py.html#gab9f6890a57ef461cf1d00ca7d64668a5',1,'VNA::vnalibrary']]],
-  ['hasfactorycalibration',['hasFactoryCalibration',['../d3/de0/group___c-_a_p_i.html#gaaae2a9c7522e62b1b2026e832b745138',1,'akela_vna_dll.h']]],
+  ['hasfactorycalibration',['hasFactoryCalibration',['../d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html#ae52c0791187c024999fbe1cc089d2331',1,'VNA.vnalibrary.RAW_VNA.hasFactoryCalibration()'],['../d3/de0/group___c-_a_p_i.html#gaaae2a9c7522e62b1b2026e832b745138',1,'hasFactoryCalibration():&#160;akela_vna_dll.h']]],
   ['havecalp1load',['haveCalP1Load',['../d3/de0/group___c-_a_p_i.html#ga43c096136457c27af90be8baf550e283',1,'akela_vna_dll.h']]],
   ['havecalp1open',['haveCalP1Open',['../d3/de0/group___c-_a_p_i.html#gaba518da17ac4acd4c03b05492be4dc35',1,'akela_vna_dll.h']]],
   ['havecalp1short',['haveCalP1Short',['../d3/de0/group___c-_a_p_i.html#ga7023a9fe3d777853188532418a336d29',1,'akela_vna_dll.h']]],

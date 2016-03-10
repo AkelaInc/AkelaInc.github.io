@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['q',['Q',['../d2/df9/struct_complex_data.html#a15734b088280482d64321de94c6431bd',1,'ComplexData']]]
+  ['raw_5fvna',['RAW_VNA',['../d8/de8/class_v_n_a_1_1vnalibrary_1_1_r_a_w___v_n_a.html',1,'VNA::vnalibrary']]]
 ];
