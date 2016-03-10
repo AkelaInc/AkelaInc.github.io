@@ -21,7 +21,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"db/d82/class_v_n_a_1_1vnaexceptions_1_1_v_n_a___exception___socket.html"
+"dc/d01/group___hop_rate_settings-_py.html#ga1761239d29be7abbfdb5308929e19f38"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

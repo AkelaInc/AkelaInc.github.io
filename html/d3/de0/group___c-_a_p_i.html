@@ -123,9 +123,6 @@ Modules</h2></td></tr>
 <tr class="memitem:d6/db3/group___task_state"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db3/group___task_state.html">TaskState</a></td></tr>
 <tr class="memdesc:d6/db3/group___task_state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available task states. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d8/dcb/group___s_parameter_selector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcb/group___s_parameter_selector.html">SParameterSelector</a></td></tr>
-<tr class="memdesc:d8/dcb/group___s_parameter_selector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available S-parameter measurements. <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d6/df7/group___calibration_step"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/group___calibration_step.html">CalibrationStep</a></td></tr>
 <tr class="memdesc:d6/df7/group___calibration_step"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available calibration steps. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,21 +280,18 @@ Run-state overview</h1>
 <li>Uninitialized (<code>TASK_UNINITIALIZED</code>)</li>
 <li>Stopped (<code>TASK_STOPPED</code>)</li>
 <li>Started (<code>TASK_STARTED</code>)</li>
-<li>Running (<code>TASK_RUNNING</code>)</li>
 </ol>
 <p>When the object is first created, it is in the uninitialized state. Here is the state table. The cell content is the new state. Blank cells mean the action is ignored. </p>
-<pre class="fragment">               |--------------------Action------------------------------------------------------|
+<pre class="fragment">               |--------------------Action-------------------------|
 </pre> <table class="doxtable">
 <tr>
-<th>&mdash;Current state&mdash;</th><th><a class="el" href="../../d3/de0/group___c-_a_p_i.html#ga7faadf2f75903093b87b3725890fd002" title="Attempts to talk to the unit specified by the Task&#39;s IP address, and download its details...">initialize()</a> </th><th><a class="el" href="../../d3/de0/group___c-_a_p_i.html#gab7eb01f7a1133ddbe44e17f7c522ede4" title="Attempts to program the VNA using the settings stored in the Task object. If it succeeds the Task ent...">start()</a> </th><th>beginAsync() </th><th>haltAsync() </th><th><a class="el" href="../../d3/de0/group___c-_a_p_i.html#gac889d8be954ea10f0d99a9972f3d921b" title="Puts the Task object into the TASK_STOPPED state. ">stop()</a> </th><th><a class="el" href="../../d3/de0/group___c-_a_p_i.html#ga93d2135dddc627b30a6088ff710e1222" title="Sets the IPv4 address on which to communicate with the unit. The ipv4 parameter is copied into the Ta...">setIPAddress()</a>  </th></tr>
+<th>&mdash;Current state&mdash;</th><th><a class="el" href="../../d3/de0/group___c-_a_p_i.html#ga7faadf2f75903093b87b3725890fd002" title="Attempts to talk to the unit specified by the Task&#39;s IP address, and download its details...">initialize()</a> </th><th><a class="el" href="../../d3/de0/group___c-_a_p_i.html#gab7eb01f7a1133ddbe44e17f7c522ede4" title="Attempts to program the VNA using the settings stored in the Task object. If it succeeds the Task ent...">start()</a> </th><th><a class="el" href="../../d3/de0/group___c-_a_p_i.html#gac889d8be954ea10f0d99a9972f3d921b" title="Puts the Task object into the TASK_STOPPED state. ">stop()</a> </th><th><a class="el" href="../../d3/de0/group___c-_a_p_i.html#ga93d2135dddc627b30a6088ff710e1222" title="Sets the IPv4 address on which to communicate with the unit. The ipv4 parameter is copied into the Ta...">setIPAddress()</a>  </th></tr>
 <tr>
-<td>uninitialized </td><td>stopped </td><td></td><td></td><td></td><td></td><td>uninitialized </td></tr>
+<td>uninitialized </td><td>stopped </td><td></td><td></td><td>uninitialized </td></tr>
 <tr>
-<td>stopped </td><td></td><td>started </td><td></td><td></td><td></td><td>uninitialized </td></tr>
+<td>stopped </td><td></td><td>started </td><td></td><td>uninitialized </td></tr>
 <tr>
-<td>started </td><td></td><td></td><td>running </td><td></td><td>stopped </td><td></td></tr>
-<tr>
-<td>running </td><td></td><td></td><td></td><td>started </td><td>stopped </td><td></td></tr>
+<td>started </td><td></td><td></td><td>stopped </td><td></td></tr>
 </table>
 <p>The <a class="el" href="../../d3/de0/group___c-_a_p_i.html#ga7faadf2f75903093b87b3725890fd002" title="Attempts to talk to the unit specified by the Task&#39;s IP address, and download its details...">initialize()</a> action ensures that the AVMU unit is online and is responding to commands. It also downloads the hardware details from the unit needed to properly program the unit.</p>
 <p>The <a class="el" href="../../d3/de0/group___c-_a_p_i.html#gab7eb01f7a1133ddbe44e17f7c522ede4" title="Attempts to program the VNA using the settings stored in the Task object. If it succeeds the Task ent...">start()</a> action programs the AVMU unit. At this stage the unit is able to respond to measurement commands.</p>
@@ -1936,7 +1930,7 @@ String describing the VNA DLL components and version numbers. </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 10 2016 15:26:21 for AKELAOpenVNA by
+    <li class="footer">Generated on Thu Mar 10 2016 15:52:14 for AKELAOpenVNA by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

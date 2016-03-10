@@ -1,15 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"db/d82/class_v_n_a_1_1vnaexceptions_1_1_v_n_a___exception___socket.html":[0,3,17],
-"db/d92/group___s_parameter_selector-_py.html":[0,4,5],
-"db/d92/group___s_parameter_selector-_py.html#ga0c0a02e707073f483e15a15bf2383c3e":[0,4,5,2],
-"db/d92/group___s_parameter_selector-_py.html#ga54693ddfd207047527f0eaa357b2d165":[0,4,5,4],
-"db/d92/group___s_parameter_selector-_py.html#ga73b0cf7024bc078f489235c9698da685":[0,4,5,1],
-"db/d92/group___s_parameter_selector-_py.html#ga8844fe9b65bfbe763f1b9fe7a12bed20":[0,4,5,0],
-"db/d92/group___s_parameter_selector-_py.html#ga976765b9c8175d99d04f7d1be9e24075":[0,4,5,3],
-"db/ddf/class_v_n_a_1_1vnaexceptions_1_1_v_n_a___exception___bad___hop.html":[0,3,4],
-"dc/d01/group___hop_rate_settings-_py.html":[0,4,2],
-"dc/d01/group___hop_rate_settings-_py.html#ga00489332508c86088dff198032981271":[0,4,2,3],
 "dc/d01/group___hop_rate_settings-_py.html#ga1761239d29be7abbfdb5308929e19f38":[0,4,2,8],
 "dc/d01/group___hop_rate_settings-_py.html#ga1fa1bd240381ef4093e29eda309ec270":[0,4,2,7],
 "dc/d01/group___hop_rate_settings-_py.html#ga289235243c5cd14692f5f154dbab22e7":[0,4,2,6],

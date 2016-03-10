@@ -10,8 +10,8 @@ var indexSectionsWithContent =
   0: "_abcdeghilmnpqrstuv",
   1: "chrtv",
   2: "_cdeghilmstuv",
-  3: "abehimnpqst",
-  4: "acehpst",
+  3: "abehimnqst",
+  4: "acehpt",
   5: "acehpst"
 };
 

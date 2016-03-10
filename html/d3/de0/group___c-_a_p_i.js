@@ -4,7 +4,6 @@ var group___c__a_p_i =
     [ "HopRateSettings", "da/d9d/group___hop_rate_settings.html", "da/d9d/group___hop_rate_settings" ],
     [ "AttenuationSettings", "dc/d2e/group___attenuation_settings.html", "dc/d2e/group___attenuation_settings" ],
     [ "TaskState", "d6/db3/group___task_state.html", "d6/db3/group___task_state" ],
-    [ "SParameterSelector", "d8/dcb/group___s_parameter_selector.html", "d8/dcb/group___s_parameter_selector" ],
     [ "CalibrationStep", "d6/df7/group___calibration_step.html", "d6/df7/group___calibration_step" ],
     [ "HardwareDetails", "d6/d39/struct_hardware_details.html", [
       [ "band_boundaries", "d6/d39/struct_hardware_details.html#a6e678c44fe8a3bbf4946e8e6670cdc5a", null ],
